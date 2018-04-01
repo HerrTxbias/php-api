@@ -1,6 +1,6 @@
 <?php
 
-/* RAW
+/* RAW-Data
 $app->get('/', function (Request $request, Response $response){
     $response->getBody()->write("Willkommen zu unserer API!");
     $this->logger->addInfo("GET / | RESP: ".$response->getBody());
