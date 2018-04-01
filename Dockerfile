@@ -1,3 +1,3 @@
 FROM richarvey/nginx-php-fpm
-COPY . /var/www/html/
+COPY src/ /var/www/html/
 EXPOSE 80
