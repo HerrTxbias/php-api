@@ -1,0 +1,7 @@
+version: '3.6'
+
+services:
+  api:
+    image: herrtxbias/php-api
+    ports:
+      - 5000:80
