@@ -20,7 +20,7 @@ $container = $app->getContainer();
 include 'container.php';
 
 $app->get('/', function (Request $request, Response $response){
-  $response->getBody()->write("Willkommen zu unserer API!<br>------------------------------------------<br>Welcome to the API!");
+  $response->getBody()->write("Welcome to the API!");
   $this->logger->addInfo("GET / | RESP: ".$response->getBody());
   return $response;
 });
