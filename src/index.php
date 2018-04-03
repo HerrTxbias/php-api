@@ -26,7 +26,7 @@ $app->get('/', function (Request $request, Response $response){
 });
 
 $app->get('/docker/ctcontrol/start/{pass}/{port}', function (Request $request, Response $response, array $args){
-	if($args['pass'] == "Motherlo2002"){
+	if($args['pass'] == "K%(97f)M]x<e\hm="){
 		$resp = shell_exec("docker run -v /opt/docker/cachet/includes/".$args['port']."/:/mnt/ -p ".$args['port'].":80 -d cachet");
 	}
 	$response->getBody()->write($resp);
@@ -43,7 +43,7 @@ $app->get('/docker/ctcontrol/stop/{ctid}', function (Request $request, Response 
 });
 
 $app->get('/docker/ctcontrol/delete/{pass}/{ctid}', function (Request $request, Response $response, array $args){
-	if($args['pass'] == "Motherlo2002"){
+	if($args['pass'] == "K%(97f)M]x<e\hm="){
      $resp = shell_exec("docker stop ".$args['ctid']);
     $resp = shell_exec("docker rm ".$args['ctid']);
 	}
@@ -60,7 +60,7 @@ $app->get('/docker/image/create/{name}', function (Request $request, Response $r
 });
 
 $app->get('/docker/image/delete/{pass}/{id}', function (Request $request, Response $response, array $args){
-	if($args['pass'] == "Motherlo2002"){
+	if($args['pass'] == "K%(97f)M]x<e\hm="){
 		$resp = shell_exec("docker rmi ".$args['id']);
 	}
 	$response->getBody()->write($resp);
